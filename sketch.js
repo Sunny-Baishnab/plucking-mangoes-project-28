@@ -9,6 +9,7 @@ var boyImage,mangoSprite,tree,treeImg;
 
 function preload(){
 	boyImage=loadImage("boy.png");
+	backgroundImg=loadImage("maxresdefault.jpg")
 }
 
 function setup() {
@@ -43,7 +44,7 @@ function setup() {
 
 function draw() {
   rectMode(CENTER);
-  background(180);
+  background(backgroundImg);
   Engine.update(engine);
   ground.display();
   drawSprites();
