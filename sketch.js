@@ -31,7 +31,7 @@ function setup() {
 
 	ground=new Ground(600,550,1200,20);
 	tree=new Tree(600,330,50,50);
-	stone=new Stone(250,250);
+	stone=new Stone(250,250,40);
 	
 	launcher=new Launcher(stone.body,{x:150,y:450});
 
@@ -88,4 +88,5 @@ function keyPressed(){
 		launcher.attach(stone.body);
 	}
 }
+
 
