@@ -15,7 +15,7 @@ class Stone{
         var pos=this.body.position
         push();
         translate(pos.x,pos.y);
-        imageMode(RADIUS);
+        imageMode(CENTER);
         image(this.image,0,0,this.r,this.r);
         pop();
     }
